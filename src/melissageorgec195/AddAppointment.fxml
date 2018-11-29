@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="melissageorgec195.AddAppointmentController">
+   <children>
+      <Label fx:id="headerLabel" layoutX="155.0" layoutY="31.0" text="Add Appointment" />
+      <Label layoutX="52.0" layoutY="73.0" text="Customer Name" />
+      <Label layoutX="52.0" layoutY="122.0" text="Description" />
+      <Label layoutX="52.0" layoutY="171.0" prefHeight="17.0" prefWidth="49.0" text="Type" />
+      <Label layoutX="53.0" layoutY="221.0" text="Start Time" />
+      <Label layoutX="55.0" layoutY="318.0" text="End Time" />
+      <TextField fx:id="custNameField" layoutX="155.0" layoutY="69.0" prefHeight="25.0" prefWidth="165.0" />
+      <ComboBox fx:id="endHoursBox" layoutX="155.0" layoutY="358.0" prefHeight="25.0" prefWidth="68.0" />
+      <ComboBox fx:id="endMinBox" layoutX="251.0" layoutY="358.0" prefHeight="25.0" prefWidth="68.0" />
+      <TextField fx:id="descriptionField" layoutX="154.0" layoutY="118.0" prefHeight="25.0" prefWidth="165.0" />
+      <ComboBox fx:id="startHoursBox" layoutX="155.0" layoutY="266.0" prefHeight="25.0" prefWidth="68.0" />
+      <ComboBox fx:id="startMinBox" layoutX="251.0" layoutY="266.0" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="231.0" layoutY="362.0" text="M:" />
+      <Label layoutX="138.0" layoutY="362.0" text="H:" />
+      <Label layoutX="138.0" layoutY="270.0" text="H:" />
+      <Label layoutX="231.0" layoutY="270.0" text="M:" />
+      <Button fx:id="saveButton" layoutX="124.0" layoutY="417.0" mnemonicParsing="false" onAction="#SaveButtonHandler" text="Save" />
+      <Button fx:id="cancelButton" layoutX="219.0" layoutY="417.0" mnemonicParsing="false" onAction="#CancelButtonHandler" text="Cancel" />
+      <DatePicker fx:id="startDatePicker" layoutX="151.0" layoutY="217.0" />
+      <DatePicker fx:id="endDatePicker" layoutX="150.0" layoutY="314.0" />
+      <ComboBox fx:id="typeField" layoutX="156.0" layoutY="167.0" prefHeight="25.0" prefWidth="165.0" />
+   </children>
+</AnchorPane>

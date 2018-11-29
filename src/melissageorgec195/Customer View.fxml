@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="397.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="melissageorgec195.CustomerViewController">
+   <children>
+      <TableView fx:id="customerTable" layoutX="13.0" layoutY="99.0" prefHeight="200.0" prefWidth="759.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="110.0" text="Name" />
+            <TableColumn fx:id="addressColumn" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="cityColumn" prefWidth="75.0" text="City" />
+            <TableColumn fx:id="postalCodeColumn" prefWidth="75.0" text="Postal Code" />
+            <TableColumn fx:id="phoneColumn" prefWidth="75.0" text="Phone" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="addButton" layoutX="69.0" layoutY="324.0" mnemonicParsing="false" onAction="#AddButtonHandler" text="Add" />
+      <Button fx:id="editButton" layoutX="130.0" layoutY="324.0" mnemonicParsing="false" onAction="#EditButtonHandler" text="Edit" />
+      <Button fx:id="deleteButton" layoutX="191.0" layoutY="324.0" mnemonicParsing="false" onAction="#DeleteButtonHandler" text="Delete" />
+      <Label layoutX="350.0" layoutY="40.0" text="Customers">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="appointButton" layoutX="269.0" layoutY="324.0" mnemonicParsing="false" onAction="#AppointmentButtonHandler" text="Appointments" />
+   </children>
+</AnchorPane>
